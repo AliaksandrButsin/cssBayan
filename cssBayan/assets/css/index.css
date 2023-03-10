@@ -43,6 +43,7 @@ background-color: rgb(246, 246, 237);
 margin: 0 auto;
 width: 100%;
 font-family: 'ABeeZee';
+
 }
 
 *,
@@ -50,22 +51,91 @@ font-family: 'ABeeZee';
 *::after {
     box-sizing: border-box;
 }
-
+/* ===================================== header ============================= */
 .header {
-    background-color: rgb(190, 190, 30);
-    margin: 0 auto;
+    width: 100%;
+    /* background-color: rgb(30, 73, 190); */
+    margin: 0px auto;
 
     display: flex;
     justify-content: center;
+}
+.header-zero {
+    width: 80%;
+    /* background-color: rgb(46, 190, 30); */
+    padding: 3% 50% 1% 1%;
+    font-size: 250%;
+}
+/* ===================================== header ============================= */
+/* ===================================== main ============================= */
+
+.main {
+    /* display: flex;
+    justify-content: center; */
     width: 100%;
-    font-family: 'Acme';
+    background-color: rgb(188, 178, 182);
+}
+.main-zero {
+    /* background-color: rgb(218, 218, 14); */
+    width: 100%;
 }
 
-.main-wrapper {
-    background-color: rgb(218, 218, 14);
-    margin: 0 auto;
+/* ===================================== main-block ============================= */
 
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.block {
+    position: relative;
+    width: 80%;
+    /* background-color: rgb(78, 16, 34); */
+    /* border: 1px black solid ; */
+    margin: 0px auto;
+    /* cursor: pointer; */
 }
+/* .block:hover { 
+} */
+
+.first {
+    /* background-color: rgb(165, 231, 52); */
+    border: 1px black solid ;
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.input {
+    position:absolute;
+    width: 50px;
+    height: 50px;
+    appearance: none;
+    position: absolute;
+}
+.input:checked ~ .block-img  {
+    display: block;
+    background-color: rgb(21, 17, 32);
+}
+
+.label {
+    /* display: block; */
+    height: 50px;
+    width: 90%;
+    background-color: rgb(156, 52, 231);
+    transition: 0.5s ease-in-out
+}
+.label:hover {
+    background-color: rgb(231, 67, 52);
+}
+
+.block-img {
+    display: none;
+    height: 100px;
+    width: 200px;
+    background-color: rgb(100, 52, 231);
+
+}
+
+
+
+
+
+
+
+/* ===================================== main ============================= */
