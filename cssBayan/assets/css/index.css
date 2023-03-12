@@ -94,7 +94,7 @@ box-sizing: border-box;
         border-bottom: 0.1em rgb(214 219	223	) solid ;
         }
         .label-button {
-            height: 5em;
+            height: 7em;
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -121,7 +121,7 @@ box-sizing: border-box;
         .div-img {
             display: flex;
             justify-content: center;
-            margin-top: -2%;
+            margin-top: 0%;
             /* transition: 0.5s; */
         }
         .img {
@@ -204,7 +204,6 @@ box-sizing: border-box;
     .header-zero {
         width: 80%;
         font-size: 250%;
-        font-weight:700;
         padding: 3%;
     }
     .icon {
