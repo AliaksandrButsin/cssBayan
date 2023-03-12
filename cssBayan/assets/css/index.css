@@ -4,12 +4,12 @@
     font-family: 'ABeeZee';
     font-style: normal;
     font-weight: 400;
-    src: url('./assets/fonts/abeezee-v22-latin-regular.eot'); /* IE9 Compat Modes */
-    src: url('./assets/fonts/abeezee-v22-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('./assets/fonts/abeezee-v22-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('./assets/fonts/abeezee-v22-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('./assets/fonts/abeezee-v22-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('./assets/fonts/abeezee-v22-latin-regular.svg#ABeeZee') format('svg'); /* Legacy iOS */
+    src: url('../fonts/abeezee-v22-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/abeezee-v22-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/abeezee-v22-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/abeezee-v22-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/abeezee-v22-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/abeezee-v22-latin-regular.svg#ABeeZee') format('svg'); /* Legacy iOS */
   }
 /* acme-regular - latin */
 @font-face {
@@ -17,12 +17,12 @@
     font-family: 'Acme';
     font-style: normal;
     font-weight: 400;
-    src: url('.assets/fonts/acme-v21-latin-regular.eot'); /* IE9 Compat Modes */
-    src: url('.assets/fonts/acme-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('.assets/fonts/acme-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('.assets/fonts/acme-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('.assets/fonts/acme-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('.assets/fonts/acme-v21-latin-regular.svg#Acme') format('svg'); /* Legacy iOS */
+    src: url('../fonts/acme-v21-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/acme-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/acme-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/acme-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/acme-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/acme-v21-latin-regular.svg#Acme') format('svg'); /* Legacy iOS */
   }
 /* adamina-regular - latin */
 @font-face {
@@ -30,112 +30,156 @@
     font-family: 'Adamina';
     font-style: normal;
     font-weight: 400;
-    src: url('.asset/fonts/adamina-v21-latin-regular.eot'); /* IE9 Compat Modes */
-    src: url('.asset/fonts/adamina-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('.asset/fonts/adamina-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('.asset/fonts/adamina-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('.asset/fonts/adamina-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('.asset/fonts/adamina-v21-latin-regular.svg#Adamina') format('svg'); /* Legacy iOS */
+    src: url('.//fonts/adamina-v21-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/adamina-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/adamina-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/adamina-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/adamina-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/adamina-v21-latin-regular.svg#Adamina') format('svg'); /* Legacy iOS */
+  }
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;      
   }
 
 .body {
-background-color: rgb(246, 246, 237);
-margin: 0 auto;
-width: 100%;
-font-family: 'ABeeZee';
+        background-color: rgb(245	245	236	);
+        margin: 0 auto;
+        width: 100%;
+        font-family: 'ABeeZee';
+        }
+        /* ===================================== header ============================= */
+        .header {
+            width: 100%;
+            /* background-color: rgb(30, 73, 190); */
+            margin: 0px auto;
+            display: flex;
+            justify-content: center;
+        }
+        .header-zero {
+            width: 80%;
+            /* background-color: rgb(46, 190, 30); */
+            padding: 3% 50% 1% 2%;
+            font-size: 250%;
+            font-weight:900;
+        }
+        /* ===================================== header ============================= */
+        /* ===================================== main ============================= */
+        .main {
+            width: 100%;
+            /* background-color: rgb(245	245	236	); */
+        }
+        .main-zero {
+            width: 100%;
+            position: relative;
+            /* background-color: rgb(218, 218, 14); */
+        }
+        /* ===================================== main-block ============================= */
+        .block {
+            width: 80%;
+            /* background-color: rgb(78, 16, 34); */
+            /* border: 1px black solid ; */
+            /* position: relative; */
+            margin: 0px auto;
+            /* cursor: pointer; */
+            color: rgb(0	89	217	);
+        }
+        
+        .line {
+            width: 100%;
+            /* background-color: rgb(165, 231, 52); */
+            border-top: 1px rgb(214 219	223	) solid ;
+            position: relative;
+        }
+        .input {
+            width: 0px;
+            height: 0px;
+            position: absolute;
+        }
+        .input:checked ~ .img {
+            display: block;
+            height: min-content;
+            margin: auto;
+        }
+        .input:checked ~ .icon {
+            rotate: 45deg;   
+        } 
+        .input:checked ~ .label {
+            color: rgb(0, 0, 0);
+        }
+        
+        
+        .label {
+            height: 100px;
+            width: 100%; 
+            /* color: rgb(0	89	217	); */
+            /* background-color: rgb(156, 52, 231); */
+            display: flex;
+            align-items: center;
+            transition: 0.1s ease-in-out;
+            /* cursor: pointer; */
+            font-size: 30px;
+            font-weight:900;
+        }
+        .label:hover {
+            color:rgb(0, 0, 0) ;
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            position: absolute;
+            top: 43px;
+            right: 10px; 
+            z-index: -1;
+            transition: 0.1s ease-in-out;
+           
+        }
+        .span1 {
+            width: 100%;
+            height: 5px;
+            background-color: #000000;
+            position: absolute;
+            top: 8px; 
+            rotate: 90deg;
+            border-radius: 10px;
+        }
+        .span2 {
+            width: 100%;
+            height: 5px;
+            background-color: #000000;
+            position: absolute;
+            top: 8px; 
+            rotate: 0deg;
+            border-radius: 10px;
+        }
+        .img {
+            display: none;
+            padding-left: 30%;
+            cursor: pointer;
+        }
 
+@media only screen and (min-width: 320px) {
+    .body {
+        font-family: 'Acme';
+      
+    }
+}
+@media only screen and (min-width: 820px) {
+    .body {
+        font-family: 'Adamina';
+      
+    }
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+@media only screen and (min-width: 1920px) {
+    .body {
+        font-family: 'ABeeZee';
+       
+    }
 }
-/* ===================================== header ============================= */
-.header {
-    width: 100%;
-    /* background-color: rgb(30, 73, 190); */
-    margin: 0px auto;
-
-    display: flex;
-    justify-content: center;
-}
-.header-zero {
-    width: 80%;
-    /* background-color: rgb(46, 190, 30); */
-    padding: 3% 50% 1% 1%;
-    font-size: 250%;
-}
-/* ===================================== header ============================= */
-/* ===================================== main ============================= */
-
-.main {
-    /* display: flex;
-    justify-content: center; */
-    width: 100%;
-    background-color: rgb(188, 178, 182);
-}
-.main-zero {
-    /* background-color: rgb(218, 218, 14); */
-    width: 100%;
-}
-
-/* ===================================== main-block ============================= */
-
-.block {
-    position: relative;
-    width: 80%;
-    /* background-color: rgb(78, 16, 34); */
-    /* border: 1px black solid ; */
-    margin: 0px auto;
-    /* cursor: pointer; */
-}
-/* .block:hover { 
-} */
-
-.first {
-    /* background-color: rgb(165, 231, 52); */
-    border: 1px black solid ;
-    width: 100%;
-    /* display: flex;
-    justify-content: space-between; */
-}
-
-.input {
-    position:absolute;
-    width: 50px;
-    height: 50px;
-    appearance: none;
-    position: absolute;
-}
-.input:checked ~ .block-img  {
-    display: block;
-    background-color: rgb(21, 17, 32);
-}
-
-.label {
-    /* display: block; */
-    height: 50px;
-    width: 90%;
-    background-color: rgb(156, 52, 231);
-    transition: 0.5s ease-in-out
-}
-.label:hover {
-    background-color: rgb(231, 67, 52);
-}
-
-.block-img {
-    display: none;
-    height: 100px;
-    width: 200px;
-    background-color: rgb(100, 52, 231);
-
-}
-
-
-
-
-
-
-
-/* ===================================== main ============================= */
