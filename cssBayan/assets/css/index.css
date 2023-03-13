@@ -1,0 +1,218 @@
+/* abeezee-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/abeezee-v22-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/abeezee-v22-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/abeezee-v22-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/abeezee-v22-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/abeezee-v22-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/abeezee-v22-latin-regular.svg#ABeeZee') format('svg'); /* Legacy iOS */
+  }
+/* acme-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Acme';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/acme-v21-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/acme-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/acme-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/acme-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/acme-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/acme-v21-latin-regular.svg#Acme') format('svg'); /* Legacy iOS */
+  }
+/* adamina-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Adamina';
+    font-style: normal;
+    font-weight: 400;
+    src: url('.//fonts/adamina-v21-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/adamina-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/adamina-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/adamina-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/adamina-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/adamina-v21-latin-regular.svg#Adamina') format('svg'); /* Legacy iOS */
+  }
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+.body {
+        background-color: rgb(246,246,237);
+        margin: 0 auto;
+        width: 100%;
+        font-family: 'ABeeZee';
+        }
+        /* ===================================== header ============================= */
+.header {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+.header-zero {
+            width: 80%;
+            padding-left: 5%;
+            font-size: 250%;
+            font-weight:900;
+            padding: 3%;
+        }
+        /* ===================================== header ============================= */
+        /* ===================================== main ============================= */
+.main {
+            width: 100%;
+            /* background-color: rgb(245	245	236	); */
+        }
+        .block {
+            width: 70%;
+            margin: 0 auto;
+            color: rgb(0	89	217	);
+        }
+        .input {
+            width: 0;
+            height: 0;
+            position: static;
+        }
+        .label {
+            display: block;
+            height: 100%;
+            width: 100%;
+            color: blue;
+            border-top: 0.1em rgb(214 219 223 ) solid ;
+            
+            background-color: rgb(246,246,237);
+            cursor: pointer;
+        }
+        .label:last-child {
+        border-bottom: 0.1em rgb(214 219	223	) solid ;
+        }
+        .label-button {
+            height: 7em;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .label-text {
+            display: flex;
+            align-items: center;
+            font-size: 200%;
+            font-weight:700;
+            
+        }
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+            color: rgb(0, 0, 0);
+            transition: 0.5s;
+            padding: 10%;
+            display: none;
+        }
+        .div-img {
+            display: flex;
+            justify-content: center;
+            margin-top: 0%;
+            /* transition: 0.5s; */
+        }
+        .img {
+            max-width: 100%;
+            max-height: 100%;
+            margin: 0 auto;
+        }
+        .input + .label:active {
+            opacity: 0.5;
+            background-color: rgba(128, 128, 128, 0.3);
+        }
+        .input + .label .div-img { 
+       
+            transition: 0.5s;
+            max-height: 0px;
+        }
+/* ===================================== main checked ============================= */
+
+        .input:checked + .label {
+            color: rgb(4, 4, 4);
+        }  
+        .input:checked + .label .div-img {
+            max-height: 500em;
+        }
+        .input:checked + .label .label-button .icon{
+            transform: rotate(45deg);
+        }
+
+/* ===================================== main checked ============================= */
+/* ===================================== main hover ============================= */
+
+        .block:hover .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .block:hover .label-text {
+            color: rgb(0, 0, 0);
+            transition: 1s;
+        }
+        .label:hover .icon{
+            transform: rotate(45deg);
+            transition: 0.5s;
+        }
+        .label:hover .div-img {
+            max-height: 500em;
+            transition: 2s;
+
+        }
+/* ===================================== main hover ============================= */
+/* ===================================== main-block ============================= */
+/* ===================================== media ============================= */
+
+@media only screen and (min-width: 50px) and (max-width: 320px) {
+    .body {
+        font-family: 'Acme';
+        font-size: 50%;
+    }
+    .header-zero {
+        width: 100%;
+        padding-bottom: 5%;
+    }
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5em;
+        padding: 10%;
+        color: rgb(0, 0, 0);
+        transition: 0.5s;
+    }
+  
+}
+@media only screen and (min-width: 321px) and (max-width: 820px) {
+    .body {
+        font-family: 'Adamina'; 
+        margin: 0 auto;
+        font-size: 80%;
+     
+    }
+    .header-zero {
+        width: 80%;
+        font-size: 250%;
+        padding: 3%;
+    }
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5em;
+        color: rgb(0, 0, 0);
+        transition: 0.5s;
+    }
+} 
